@@ -62,6 +62,7 @@
             this.BtnCursiva.TabIndex = 2;
             this.BtnCursiva.Text = "Cursiva";
             this.BtnCursiva.UseVisualStyleBackColor = true;
+            this.BtnCursiva.Click += new System.EventHandler(this.BtnCursiva_Click);
             // 
             // BtnSubrayada
             // 
@@ -71,6 +72,7 @@
             this.BtnSubrayada.TabIndex = 3;
             this.BtnSubrayada.Text = "Subrayada";
             this.BtnSubrayada.UseVisualStyleBackColor = true;
+            this.BtnSubrayada.Click += new System.EventHandler(this.BtnSubrayada_Click);
             // 
             // Form1
             // 
