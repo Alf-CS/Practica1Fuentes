@@ -1,6 +1,6 @@
 ﻿namespace Practica1Fuentes
 {
-    partial class Form1
+    partial class PruebaFuentes
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.BtnNegrita = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.BtnCursiva = new System.Windows.Forms.Button();
             this.BtnSubrayada = new System.Windows.Forms.Button();
+            this.textBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // BtnNegrita
@@ -43,15 +43,6 @@
             this.BtnNegrita.Text = "Negrita";
             this.BtnNegrita.UseVisualStyleBackColor = true;
             this.BtnNegrita.Click += new System.EventHandler(this.BtnNegrita_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(269, 129);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "En un lugar de la Mancha";
             // 
             // BtnCursiva
             // 
@@ -74,16 +65,23 @@
             this.BtnSubrayada.UseVisualStyleBackColor = true;
             this.BtnSubrayada.Click += new System.EventHandler(this.BtnSubrayada_Click);
             // 
-            // Form1
+            // textBox
+            // 
+            this.textBox.Location = new System.Drawing.Point(178, 63);
+            this.textBox.Name = "textBox";
+            this.textBox.Size = new System.Drawing.Size(376, 27);
+            this.textBox.TabIndex = 4;
+            // 
+            // PruebaFuentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox);
             this.Controls.Add(this.BtnSubrayada);
             this.Controls.Add(this.BtnCursiva);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnNegrita);
-            this.Name = "Form1";
+            this.Name = "PruebaFuentes";
             this.Text = "Prueba de fuentes";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -94,8 +92,8 @@
         #endregion
 
         private Button BtnNegrita;
-        private Label label1;
         private Button BtnCursiva;
         private Button BtnSubrayada;
+        private TextBox textBox;
     }
 }
